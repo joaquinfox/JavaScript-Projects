@@ -1,13 +1,30 @@
-*,html {
+html {
   margin:0;
   box-sizing:border-box;
   padding:0;
   font-family: sans-serif;
 }
+main{
+  display:flex;
+  flex-direction:column;
+}
 
+#gameBoard{
+  /*margin: auto;*/
+  /*width:80%;*/
+  display:flex;
+}
+#colorGrid{
+  width:50%;
+  margin:5% auto;
+  display:flex;
+  flex-wrap:wrap;
+  
+}
 .oneColor{
-  width:33%;
+  width:32%;
   background-color:green;
-  padding:1%;
-  margin:1%;
+  padding-bottom:30%;
+  margin:0.667%;
+  border-radius:12%;
 }
