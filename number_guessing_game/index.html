@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number guessing game</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='./index.css'>
+  </head>
+  <body>
+    <main>
+      <h1>Can you guess it?</h1>
+      <p>I am thinking of a number between 1 and 100. Guess it in 10 tries or fewer to win!</p>
+      <form>
+        <input type='text' id='userInput' placeholder="What's your guess?">
+        <button id='checkGuess'>Check guess</button>
+      </form>
+      <div id='userFeedback'>
+        <p id='guessCount'></p>
+        <p id='guessList'></p>
+        <p id='userMsg'></p>
+      </div>
+    </main>
+  <script src='./index.js'>
+  </script>
+  </body>
+</html>
