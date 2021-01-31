@@ -5,7 +5,7 @@
     }
     main{
       width: 50%;
-      height: 85vh;
+      height: auto;
       margin: 5% auto;
       padding:5%;
       box-shadow:1px 1px 20px #213181;
