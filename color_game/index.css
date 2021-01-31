@@ -1,8 +1,50 @@
-html {
+html,body {
   margin:0;
   box-sizing:border-box;
   padding:0;
   font-family: sans-serif;
+}
+
+:root{
+ --btn-text:uppercase;
+ --btn-space: 3px;
+ --btn-pad: 1%;
+ --btn-border:none;
+
+}
+body{
+  background-color:#025;
+}
+header{
+  text-align:center;
+  background-color:#fff;
+  padding:3%;
+  margin:0;
+}
+header, p{
+  margin:0;
+  padding:2%;
+}
+h1{
+  margin:0;
+}
+#stripe{
+  text-align:center;
+  line-height:2;
+  background-color:#ffe;
+  margin:0;
+}
+#userMsg{
+  padding:6%;
+}
+button{
+  text-transform: var(--btn-text);
+  letter-spacing:var(--btn-space);
+  padding:var(--btn-pad);
+  border: var(--btn-border);
+  margin: 0 1%;
+  background-color: #fff;
+  
 }
 main{
   display:flex;
@@ -16,7 +58,7 @@ main{
 }
 #colorGrid{
   width:50%;
-  margin:5% auto;
+  margin:10% auto;
   display:flex;
   flex-wrap:wrap;
   
