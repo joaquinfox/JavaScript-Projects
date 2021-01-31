@@ -24,9 +24,8 @@ function buildColorArray(l){
 }
 function selectTargetColor(){
   let rand = Math.floor(Math.random() *(gameLength));
-  console.log(rand);
   targetColor = colorArray[rand];
   return targetColor;
 }
 
-// console.log('target color',targetColor, colorArray);
+console.log('target color',targetColor, colorArray);
