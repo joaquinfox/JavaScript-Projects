@@ -120,18 +120,32 @@ Becomes
 
 
 ## Other Tidbits ##
-* Unordered lists
-  * Nested ul by tabbing  
+### Lists ###
+#### Unorderd ####
+Use dashes (-), asterisks (*) or plus signs (+) in front of the item. Indent to create a _nested_ list.
+* bananas
+  * big ones
+  * little ones
+  * red ones
+  * blue ones
 
-1. Ordered lists  
- Nest it by tabbing  
- Second thing  
- third thing
+#### Ordered List ####
+Use numbers followed by a dot (.) Indent to nest.
+1. Wake up
+2. Get dressed
+ 1. Put on pants
+ 2. Put on shirt
+3. Have coffee 
 
-* Mixing it up
-  1. first
-  2. second
-  3. third
+#### Mixing it up ####
+* one idea
+  1. eat
+  2. drink
+  3. be merry
+* a different idea
+ 1. drink
+ 2. be merry
+ 3. sleep
 
 By adding two spaces you can make this:
 
