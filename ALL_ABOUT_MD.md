@@ -129,9 +129,9 @@ Becomes
  3. third thing
 
 * Mixing it up
-  1 first
-  2 second
-  3 third
+  1. first
+  2. second
+  3. third
 
 By adding two spaces you can make this:
 
