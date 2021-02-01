@@ -1,4 +1,4 @@
-const gameLength = 6;
+let gameLength = 6;
 let colorArray = [];
 let targetColor = '';
 
@@ -7,6 +7,7 @@ const targetColorDisplay = document.querySelector('#targetColorDisplay');
 const resetBtn = document.querySelector('#reset');
 const userMsg = document.querySelector('#userMsg');
 const header = document.querySelector('header');
+const setDifficultyBtns = document.querySelectorAll('.setDifficulty');
 
 reset();
 resetBtn.addEventListener('click', reset);
@@ -18,6 +19,22 @@ function reset(){
   colorArray = [];
   header.style.backgroundColor = '#fff';
   buildColorArray(gameLength);
+}
+
+
+for(let i =0; i < setDifficultyBtns.length; i++){
+    setDifficultyBtns[i].addEventListener('click', ()=>setGameDifficulty(setDifficultyBtns[i].innerText));
+    }
+  
+
+function setGameDifficulty(d){
+  if(d === 'EASY'){
+    gameLength = 3;
+  }else{
+    gameLength = 6;
+  }
+  reset(gameLength);
+  console.log(gameLength, colorArray)
 }
 
 // Game Logic
@@ -62,8 +79,13 @@ function selectTargetColor(){
 }
 
 function applyColors(){
-  for(let i = 0; i < colorArray.length; i++){
+  for(let i = 0; i < colorGridDisplay.length; i++){
+    if(colorArray[i]){
     colorGridDisplay[i].style.backgroundColor = colorArray[i];
+    colorGridDisplay[i].style.display = 'inline';
+    }else{
+      colorGridDisplay[i].style.display = 'none';
+    }
   }
 }
 
