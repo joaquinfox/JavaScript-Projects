@@ -5,13 +5,7 @@ html,body {
   font-family: sans-serif;
 }
 
-:root{
- --btn-text:uppercase;
- --btn-space: 3px;
- --btn-pad: 1%;
- --btn-border:none;
 
-}
 body{
   background-color:#025;
 }
@@ -21,6 +15,37 @@ header{
   padding:3%;
   margin:0;
 }
+
+/****HOME LINK STYLES****/
+#homeLink{
+  font-size:1.5rem;
+  letter-spacing:3px;
+  padding:0.5% 1%;
+  border-radius:8%;
+  margin: 0 1%;
+  background-color: #000;
+  color:#fff;
+  font-weight:bold;
+  position:absolute;
+  top:1rem;
+  left:0;
+  transition:all 0.1s linear;
+}
+#homeLink:hover{
+  background-color:#fff;
+  color:#000;
+  border: thin solid #000;
+}
+ a{
+  text-decoration:none;
+  color:inherit;
+}
+#homeLink:hover{
+  color:#000;
+  background-color:#fff;
+}
+
+/*********END**********/
 header, p{
   margin:0;
   padding:2%;
@@ -28,20 +53,23 @@ header, p{
 h1{
   margin:0;
 }
+#targetColorDisplay{
+  text-transform:uppercase;
+  font-size: rem;
+}
 #stripe{
   text-align:center;
   line-height:2;
-  background-color:#ffe;
+  background-color:#fef;
   margin:0;
 }
 #userMsg{
   padding:6%;
 }
-button{
-  text-transform: var(--btn-text);
-  letter-spacing:var(--btn-space);
-  padding:var(--btn-pad);
-  border: var(--btn-border);
+ button {
+  text-transform: uppercase;
+  letter-spacing:3px;
+  border: none;
   margin: 0 1%;
   background-color: #fff;
   
@@ -69,4 +97,5 @@ main{
   padding-bottom:30%;
   margin:0.667%;
   border-radius:12%;
+  box-shadow:0px 0px 10px 1px #020;
 }
