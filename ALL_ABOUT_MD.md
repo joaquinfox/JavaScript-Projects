@@ -143,13 +143,13 @@ Use numbers followed by a dot (.) Indent to nest.
   2. drink
   3. be merry
 * a different idea
- 1. drink
- 2. be merry
- 3. sleep
+  1. drink
+  2. be merry
+  3. sleep
 
 By adding two spaces you can make this:
 
 fnadsjf afdaksjf aksjda akjfdka jak sfka a fkdajfka a fjdka jfdask
 
 Into this:
-fnadsjf afdaksjf aksjda   akjfdka jak sfka a   fkdajfka a fjdka jfdask
+fnadsjf afdaksjf aksjda     akjfdka jak sfka a     fkdajfka a fjdka jfdask
