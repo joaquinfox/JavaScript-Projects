@@ -55,7 +55,7 @@ h1{
 }
 #targetColorDisplay{
   text-transform:uppercase;
-  font-size: rem;
+  font-size: 3rem;
 }
 #stripe{
   text-align:center;
@@ -64,7 +64,10 @@ h1{
   margin:0;
 }
 #userMsg{
-  padding:6%;
+  width:8rem;
+  display:inline-block;
+  text-transform:capitalize;
+  font-family:cursive;
 }
  button {
   text-transform: uppercase;
