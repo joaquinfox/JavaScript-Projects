@@ -20,21 +20,21 @@ Create this output
 ## Style ##
 This
 ```
-**bold**
-**also works for longer strings**
-_italicize_
-_italicize all this_
-**_combine it all like this_**
-_**Or like this**_
+**bold**  
+**also works for longer strings**  
+_italicize_  
+_italicize all this_  
+**_combine it all like this_**  
+_**Or like this**_  
 ```
 Leads to this ...
 
-**bold**
-**also works for longer strings**
-_italicize_
-_italicize all this_
-**_combine it all like this_**
-_**Or like this**_
+**bold**  
+**also works for longer strings**  
+_italicize_  
+_italicize all this_  
+**_combine it all like this_**  
+_**Or like this**_  
 
 
 ## Links ##
