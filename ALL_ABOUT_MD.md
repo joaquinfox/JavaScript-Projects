@@ -121,8 +121,8 @@ Becomes
 
 ## Other Tidbits ##
 * Unordered lists
-  * Nested ul by tabbing
-1 Ordered lists
+  * Nested ul by tabbing  
+1 Ordered lists  
   1 Nest it by tabbing
 
 * Mixing it up
