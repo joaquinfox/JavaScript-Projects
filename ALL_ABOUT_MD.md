@@ -124,9 +124,9 @@ Becomes
   * Nested ul by tabbing  
 
 1. Ordered lists  
- 1. Nest it by tabbing  
- 2. Second thing  
- 3. third thing
+ Nest it by tabbing  
+ Second thing  
+ third thing
 
 * Mixing it up
   1. first
