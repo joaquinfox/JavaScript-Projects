@@ -64,7 +64,7 @@ h1{
   margin:0;
 }
 #userMsg{
-  width:8rem;
+  width: 8rem;
   display:inline-block;
   text-transform:capitalize;
   font-family:cursive;
@@ -86,10 +86,10 @@ display:flex;
   width:100%;
 }
 #colorGrid{
-  width:50%;
-  margin:10% auto;
-  display:flex;
-  flex-wrap:wrap;
+  width: 50%;
+  margin: 10% auto;
+  display: flex;
+  flex-wrap: wrap;
   
 }
 .oneColor{
