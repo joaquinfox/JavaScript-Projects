@@ -78,14 +78,12 @@ h1{
   
 }
 main{
-  display:flex;
-  flex-direction:column;
+display:flex;
 }
 
 #gameBoard{
-  /*margin: auto;*/
-  /*width:80%;*/
-  display:flex;
+  margin:auto;
+  width:100%;
 }
 #colorGrid{
   width:50%;
@@ -100,5 +98,12 @@ main{
   padding-bottom:30%;
   margin:0.667%;
   border-radius:12%;
-  box-shadow:0px 0px 10px 1px #020;
+  box-shadow:0 0 10px 1px #020;
+}
+
+@media only screen and (min-width: 1200px){
+  #gameBoard {
+    width: 60%;
+  }
+  
 }
