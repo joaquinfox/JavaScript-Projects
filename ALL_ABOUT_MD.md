@@ -1,23 +1,23 @@
-#Markdown Notes#
+# Markdown Notes #
 
 For the full dope on markdown, see [this great tutorial](https://www.markdowntutorial.com)
 
-##Headers##
+## Headers ##
 These lines
 ```
-#h1#  
-##h2##
-###h3###
+# h1 #  
+## h2 ##
+### h3 ###
 ```
 Create this output
 
-#h1#  
-##h2##  
-###h3###  
+# h1 #  
+## h2 ##  
+### h3 ###  
 
 ...and so on.
 
-##Style##
+## Style ##
 This
 ```
 **bold**
@@ -37,8 +37,8 @@ _italicize all this_
 _**Or like this**_
 
 
-##Links##
-###Inline links###
+## Links ##
+### Inline links ###
 This
 ```
 Inline links: [Visit GitHub](www.github.com)
@@ -55,7 +55,7 @@ Gets you ...
 
 Inline links: [Visit GitHub](www.github.com)
 
-###Reference Link###
+### Reference Link ###
 ```
 This is a [link][some place on the web]
 This is another [link][some other place on the web]
@@ -72,7 +72,7 @@ This is another [link][some other place on the web]
 [some place on the web]: www.someplace.com
 {some other place on the web]: www.someotherplace.com
 
-##Images##
+## Images ##
 This
 ```
 
@@ -91,7 +91,7 @@ Here is a picture of a ![naked penguin][alternate description](http://worldanima
 [alternate description]:http://worldanimalnews.com/wp-content/uploads/2017/04/macaroni1-3.jpg
 ```
 
-##Blockquote##
+## Blockquote ##
 This
 ```
 >"This is the most amazing quote ever quoted since quoting became a thing, back in the days before quotes, when no one knew what a quote was, and it is sooo good you want the **entire** quote and just the main point which is...what was the main point?"
@@ -119,7 +119,7 @@ Becomes
 >when no one knew what a quote was, and it is sooo good you..."
 
 
-##Other Tidbits##
+## Other Tidbits ##
 * Unordered lists
   * Nested ul by tabbing
 1 Ordered lists
