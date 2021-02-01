@@ -5,13 +5,18 @@ let targetColor = '';
 const colorGridDisplay= document.querySelectorAll('.oneColor');
 const targetColorDisplay = document.querySelector('#targetColorDisplay');
 const resetBtn = document.querySelector('#reset');
+const userMsg = document.querySelector('#userMsg');
+const header = document.querySelector('header');
 
 reset();
 resetBtn.addEventListener('click', reset);
 
 
 function reset(){
+  resetBtn.textContent = 'reset';
+  userMsg.textContent = '';
   colorArray = [];
+  header.style.backgroundColor = '#fff';
   buildColorArray(gameLength);
 }
 
@@ -22,8 +27,12 @@ colorGridDisplay[i].addEventListener('click', ()=>evaluateClick(colorGridDisplay
 
 function evaluateClick(color){
     if(color === targetColor){
-    console.log('match');
-  }else{ console.log('miss')}
+    userMsg.textContent = 'You got it!';
+    header.style.backgroundColor = targetColor;
+    resetBtn.textContent = 'new game?';
+  }else{
+    userMsg.textContent = 'Try again'
+  }
   
 }
 
@@ -62,5 +71,3 @@ function applyTargetColor(){
   targetColorDisplay.textContent = targetColor;
 }
 
-
-console.log('target color',targetColor, colorArray);
