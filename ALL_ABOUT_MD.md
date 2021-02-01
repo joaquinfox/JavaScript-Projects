@@ -152,7 +152,7 @@ By adding two spaces (or more) and hitting return, you can make this:
 
 fnadsjf afdaksjf aksjda akjfdka jak sfka a fkdajfka a fjdka jfdask
 
-Into this:
+Into this:  
 fnadsjf afdaksjf aksjda  
 akjfdka jak sfka a fkdajfka  
 a fjdka jfdask
