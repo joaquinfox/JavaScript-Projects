@@ -1,12 +1,33 @@
 const gameLength = 6;
-const colorArray = [];
+let colorArray = [];
 let targetColor = '';
 
-buildColorArray(gameLength);
+const colorGridDisplay= document.querySelectorAll('.oneColor');
+const targetColorDisplay = document.querySelector('#targetColorDisplay');
+const resetBtn = document.querySelector('#reset');
+
+reset();
+resetBtn.addEventListener('click', reset);
 
 
+function reset(){
+  colorArray = [];
+  buildColorArray(gameLength);
+}
 
-// Generate a random number between 0 and 266, use this to build an RGB string
+// Game Logic
+for(let i = 0; i < colorGridDisplay.length; i++){
+colorGridDisplay[i].addEventListener('click', ()=>evaluateClick(colorGridDisplay[i].style.backgroundColor));
+}
+
+function evaluateClick(color){
+    if(color === targetColor){
+    console.log('match');
+  }else{ console.log('miss')}
+  
+}
+
+
 function generateSingleColor(){
   let r = Math.floor(Math.random()*256);
   let g = Math.floor(Math.random()*256);
@@ -21,11 +42,25 @@ function buildColorArray(l){
       colorArray.push(newColor);
   }
   selectTargetColor();
+  applyColors();
+  applyTargetColor()
 }
+
 function selectTargetColor(){
   let rand = Math.floor(Math.random() *(gameLength));
   targetColor = colorArray[rand];
   return targetColor;
 }
+
+function applyColors(){
+  for(let i = 0; i < colorArray.length; i++){
+    colorGridDisplay[i].style.backgroundColor = colorArray[i];
+  }
+}
+
+function applyTargetColor(){
+  targetColorDisplay.textContent = targetColor;
+}
+
 
 console.log('target color',targetColor, colorArray);
