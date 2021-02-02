@@ -10,5 +10,5 @@ with novel syntax or features.
 
 ## About ##
 I am a web developer and programmer living in Arizona
-Visit my [profile at](https://www.joaquinfox.dev)
+Visit my [profile here](https://www.joaquinfox.dev)
 
