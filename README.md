@@ -5,6 +5,6 @@ My purpose is to improve my craft and experiment
 with novel syntax and features.
 
 ## About ##
-I am a web developer and programmer living in Arizona
-Visit my [profile here](https://www.joaquinfox.dev)
+I am a web developer and programmer living in Arizona.
+Visit my profile at [joaquinfox.dev](https://www.joaquinfox.dev)
 
