@@ -6,5 +6,5 @@ with novel syntax and features.
 
 ## About ##
 I am a web developer and programmer living in Arizona.
-Visit my profile at [joaquinfox.dev](https://www.joaquinfox.dev)
+Visit my profile at [www.joaquinfox.dev](https://www.joaquinfox.dev)
 
