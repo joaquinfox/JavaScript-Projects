@@ -8,7 +8,7 @@ const data = [
   desc: 'A user guesses at a randomly generated number, and game logic evaluates user responses and provides user feedback.',
   },
   {
-  link:'./color_picker_game/index.html',
+  link:'./color_game/index.html',
   title:'color picker game',
   desc:'This game uses random number generation and packages these as an RGB text string to arrive at a random color pattern. User is presented with a color pallete and instructed to click the color that matches a target color.',
   },
