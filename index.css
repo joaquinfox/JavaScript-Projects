@@ -17,20 +17,33 @@
           box-shadow:1px 1px 500px #dbf;
           height:auto;
         }
-        ul{
-          margin:0 auto;
-        }
+       
         h1{
           text-align:center;
           margin: 5% 0;
         }
         li{
-          margin:10% auto;
           list-style:none;
-          transition: all .3s linear;
         }
-        li:hover{
-          color: #becf53;
+       
+        h4{
+          text-transform:capitalize;
+        }
+        .showHide{
+          text-transform: capitalize;
+          font-size:70%;
+          letter-spacing:2px;
+          background-color:white;
+          font-family:cursive;
+          border:none;
+          transition:all .3s linear;
+        }
+        
+        .showHide:hover{
+          background-color:#ffdd00;
+          /*color:#ffdd00;*/
+          border:1px solid #ffdd00;
+          border-radius:12%;
         }
         .hidePara{
           display:none;
