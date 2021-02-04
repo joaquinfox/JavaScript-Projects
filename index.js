@@ -8,7 +8,7 @@ const data = [
   desc: 'A user guesses at a randomly generated number, and game logic evaluates user responses and provides user feedback.',
   },
   {
-  link:'./color_game/index.html',
+  link:'./color_picker_game/index.html',
   title:'color picker game',
   desc:'This game uses random number generation and packages these as an RGB text string to arrive at a random color pattern. User is presented with a color pallete and instructed to click the color that matches a target color.',
   },
@@ -23,9 +23,9 @@ const data = [
 data.forEach(i=>{
   let liEl = document.createElement('li');
   
-  liEl.innerHTML =` <a href=${i.link}><h4>${i.title}</h4></a>
+  liEl.innerHTML =`<article> <a href=${i.link}><h4>${i.title}</h4></a>
   <p class='hidePara'>${i.desc}</p>
-  <button class='showHide'> ...read more </button>`;
+  <button class='showHide'> description </button></article>`;
 ulEl.appendChild(liEl);
 });
 
@@ -35,10 +35,9 @@ showHideBtns.forEach(button=>{
   button.addEventListener('click',()=>{
     (button.previousElementSibling.classList.toggle('hidePara'));
     if(button.previousElementSibling.getAttribute('class')){
-       button.textContent = '...read more';
+       button.textContent = 'description';
     }else{
-           button.textContent='...read less';
-
+           button.textContent='hide';
     }
   });
 });
