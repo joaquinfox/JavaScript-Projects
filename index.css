@@ -1,51 +1,57 @@
-       html{
+     html{
         font-family: sans-serif;
         box-sizing:border-box;
         margin:0;
         padding:0;
       }
+      
       body{
         background-color:#fefeee;
       }
-        main{
-          margin:5% auto;
-          width:30%;
-          background-color:#ffe;
-          display:flex;
-          flex-direction:column;
-          border-radius:6%;
-          box-shadow:1px 1px 500px #dbf;
-          height:auto;
-        }
-       
-        h1{
-          text-align:center;
-          margin: 5% 0;
-        }
-        li{
-          list-style:none;
-        }
-       
-        h4{
-          text-transform:capitalize;
-        }
-        .showHide{
-          text-transform: capitalize;
-          font-size:70%;
-          letter-spacing:2px;
-          background-color:white;
-          font-family:cursive;
-          border:none;
-          transition:all .3s linear;
-        }
-        
-        .showHide:hover{
-          background-color:#ffdd00;
-          /*color:#ffdd00;*/
-          border:1px solid #ffdd00;
-          border-radius:12%;
-        }
-        .hidePara{
-          display:none;
-        }
-       
+      
+      main{
+        margin:5% auto;
+        width:30%;
+        background-color:#ffe;
+        display:flex;
+        flex-direction:column;
+        border-radius:6%;
+        box-shadow:1px 1px 500px #dbf;
+        height:100vh;
+      }
+     
+      h1{
+        text-align:center;
+        margin: 5% 0;
+      }
+      
+      li{
+        list-style:none;
+      }
+     
+      h4{
+        text-transform:capitalize;
+      }
+      
+      .showHide{
+        text-transform: capitalize;
+        font-size:70%;
+        letter-spacing:2px;
+        background-color:white;
+        font-family:cursive;
+        border:none;
+        transition:all .3s linear;
+      }
+      
+      .showHide:hover{
+        background-color:#feedfe;
+        border-radius:12%;
+      }
+      p{
+        font-size:85%;
+      }
+      .hidePara{
+        display:none;
+      }
+     
+    
