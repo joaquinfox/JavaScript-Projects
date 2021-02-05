@@ -11,13 +11,20 @@ main{
   /*margin:auto;*/
   border:1px solid black;
   width:30%;
+  padding:2%;
+}
+input{
+  width:100%;
+  height:10vh;
+  margin-bottom:5%;
 }
 
 #inputField{
   display:flex;
 }
 #numBtns{
-  /*width:50%;*/
+  width:70%;
+  /*padding-bottom:5%;*/
   /*flex-wrap:wrap;*/
   
 }
