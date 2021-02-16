@@ -19,8 +19,8 @@ const data = [
   },
     {
   link:'https://joaquinfox.github.io/functional_programming/',
-  title:'Functional Programming Discussion and Demo',
-  desc:'Higher order functions, composition & composability, Map, Filter, Reduce and other attributes of functional programming.',
+  title:'Functional Programming.',
+  desc:'Discussion and Demo of higher order functions, composition & composability, Map, Filter, Reduce and other attributes of functional programming.',
   },
   ];
   
