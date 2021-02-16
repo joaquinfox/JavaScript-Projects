@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Higher Order Functions</title>
+  <style>
+    body{
+      font-family:sans-serif;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Functional Programming</h1>
+    <h3> Notes from <a href="https://www.youtube.com/watch?v=BMUiFMZr7vk">Higher Order Functions</a></h3>
+    <h4>Higher Order Functions are ...</h4>
+    <ul>
+      <li>Easier to read</li>
+      <li>Easier to re-use</li>
+      
+    </ul>
+    <p>Functional programming let's us create anonymous functions and pass them around, so we can go from this ...</p>
+   <code>
+    function triple(x){
+    <br>
+    return x * 3
+    <br>
+    }
+   </code>
+   <p> to this ...</p>
+   <code>
+     let triple = function(x){
+     <br>
+     return x * 3
+     <br>
+     }
+     
+   </code>
+   
+   <h4>Composition</h4>
+   <p>By assigning functions to variables, we can pass them, connect them, and nest them so as to make big operations simpler, and readable.</p>
+   <p> Higher order functions accept callback functions. Callback functions are functions you stuff inside of other functions, so that they can perform some subsidiary task. This structure is an example of composition, where we have a higher order function with a callback function. The callback function does some operation that is part of the larger task of the higher order function.</p>
+   <p>Suppose we are given the following data, an array of objects</p>
+   <code>
+         const animals = [
+         <br>
+      { name:'fluffy', species:'cat'},
+      <br>
+      { name:'dingo', species:'crododile'},
+            <br>
+
+      { name:'Issabel', species:'camel'},
+            <br>
+
+      { name:'JimBob', species:'cat'},
+            <br>
+
+      { name:'Ceasar', species:'cat'},
+            <br>
+
+      { name:'Cerebrum', species:'parrot'},
+            <br>
+
+      { name:'Trump', species:'rabbit'},
+            <br>
+
+      { name:'George Washington', species:'dog'},
+      <br>
+      ]
+   </code>
+  <p>Say we want to extract cats from this list. Here is a <em>procedural</em> way of accomplishing that.</p>
+  <code>
+     const cats=[]
+     <br>
+     function getCats(animals){
+     <br>
+      for(let i = 0; i < animals.length;i++){
+      <br>
+        if(animals[i].species === 'cat'){
+        <br>
+          cats.push(animals[i])
+          <br>
+        }
+        <br>
+      }
+      <br>
+      return cats
+      <br>
+      }
+      <br>
+  </code>
+  <p>Now let's do the same thing using the higher order function <em>filter</em></p>
+  <code>
+        let cats = animals.filter(animal=>{
+        <br>
+          animal.species === 'cat'
+          <br>
+       })
+    
+  </code>
+  <p>We can use composition to stream line and clarify our logic even further</p>
+  <code>
+     let isCat = (animal)=>{ return animal.species === 'cat'}
+     <br>
+      let cats = animals.filter(isCat)
+  </code>
+  <h4>Map</h4>
+  <p>Let's extract the names from the array animals,</p>
+  <p>A procedural method could be something like this:</p>
+  <code>
+     let names =[];
+     <br>
+      for(let i = 0; i < animals.length;i++){
+      <br>
+        names.push(animals[i].name);
+        <br>
+      }
+  </code>
+  <p>Now let's use Map</p>
+  <code>
+      let names = animals.map(animal => animal.name);
+  </code>
+  <h4>Summary of higher order functions</h4>
+  <p>All the functions below take a list and a callback function and return the list transformed into something else.</p>
+  <ul>
+    <li>
+    <strong>Map</strong> will take an array, transform it and return an array <em>of the same length.</em>
+    </li>
+      <li>
+    <strong>Filter & Reject</strong> will take an array, transform it and return a <em>smaller array.</em>
+    <p>I don't see a use case for reject where filter cannot be used instead.</p>
+    </li>
+      <li>
+    <strong>Find</strong> works like filter, but only returns <em>a single item</em> (the first matching item it finds).
+    </li>
+    </ul>
+  <h4>Reduce</h4>
+  <p>Reduce is the multi tool of higher order functions. It can performa <em>any</em> of the transformations other functions do.</p>
+  
+    
+    <script>
+    const animals = [
+      {name:'fluffy', species:'cat'},
+      { name:'dingo', species:'crododile'},
+       {name:'Issabel', species:'camel'},
+      { name:'JimBob', species:'cat'},
+       {name:'Ceasar', species:'cat'},
+      { name:'Cerebrum', species:'parrot'},
+       {name:'Trump', species:'rabbit'},
+      { name:'George Washington', species:'dog'},
+      ]
+      
+      const orders =[
+        {amount:572},
+        {amount:937},
+        {amount:812},
+        ]
+        
+        let sum= 0;
+        for(let i = 0; i < orders.length;i++){
+          sum += Number(orders.amount)
+        }
+        console.log(Number(sum))
+      
+      // let names = animals.map(animal=>animal.name);
+      // console.log(names);
+      // let names =[]
+      // for(let i =0; i < animals.length;i++){
+      //   names.push(animals[i].name)
+      // }
+      // console.log(names)
+      // let isCat = (animal)=>{ return animal.species === 'cat'}
+      // let cats = animals.filter(isCat)
+      // console.log(cats);
+      // const cats=[]
+      // for(let i =0; i < animals.length;i++){
+      //   if(animals[i].species === 'cat'){
+      //     cats.push(animals[i])
+      //   }
+      // }
+      // console.log(cats)
+      //
+      // let notCats =animals.reject(animal=>{
+      //   return animal.species === 'cat'
+      // })
+      // console.log(notCats)
+      
+    </script>
+  </body>
+</html>
