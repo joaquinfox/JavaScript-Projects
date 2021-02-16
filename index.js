@@ -17,6 +17,11 @@ const data = [
   title:'Local Storage API Demo',
   desc:'A demonstration of local storage. User inputs for font and color schemes are stored in local storage and retrieved on page refresh. The documentation provides a discussion of session storage mechanics.',
   },
+    {
+  link:'https://joaquinfox.github.io/functional_programming/',
+  title:'Functional Programming Discussion and Demo',
+  desc:'Higher order functions, composition & composability, Map, Filter, Reduce and other attributes of functional programming.',
+  },
   ];
   
 // Render data
