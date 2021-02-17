@@ -1,0 +1,6 @@
+betty boop 	couch	200	3
+marco polo	futon	100	1
+betty boop 	futon	100	4
+marco polo	couch 	200	2
+tweety bird	futton	100	2
+marco polo	sofa	300	1
